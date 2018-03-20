@@ -12,8 +12,8 @@ readme="README.md"
 [dependencies]
 log = "0.4"
 rusttype = { version = "0.5", features = ["gpu_cache"] }
-gfx = "0.17"
-gfx_core = "0.8"
+gfx = { git = "https://github.com/moggers/gfx", branch = "v0.17-dynamic-texture"}
+gfx_core = { git = "https://github.com/moggers/gfx", branch = "v0.17-dynamic-texture"}
 unicode-normalization = "0.1"
 ordered-float = "0.5"
 xi-unicode = "0.1"
@@ -23,7 +23,7 @@ twox-hash = "1"
 [dev-dependencies]
 env_logger = "0.5"
 approx = "0.1"
-gfx_window_glutin = "0.21"
+gfx_window_glutin = { git = "https://github.com/moggers/gfx", branch = "v0.17-dynamic-texture"}
 glutin = "0.13"
 time = "0.1"
 cgmath = "0.16"
